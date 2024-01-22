@@ -1,0 +1,313 @@
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-empresa {
+    order: -1;
+    max-width: 15%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.redes {
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.redes li {
+    margin-bottom: 10px;
+}
+
+.logos-redes {
+    height: 2rem;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parrafo-seccion {
+    flex: 1;
+    width: 80%;
+    text-align: center;
+}
+
+.img-dispositivos {
+    flex: 1;
+    width: 50%;
+}
+
+.btn-demo-class {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s, color 0.5s;
+}
+
+.btn-demo-class:hover{
+    background-color:rgb(4, 4, 66);
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-1-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parrafo-seccion1-productos{
+    text-align: center;
+}
+
+.imagenes-promo {
+    width: 25rem;
+}
+
+.btn-you-tube{
+    background-color: #c4302b;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.btn-you-tube:hover{
+    background-color: rgb(255, 255, 255);
+    color: #c4302b;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.main-ventas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.section-ventas {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.subtitulos-capacitacion {
+    margin-top: 50px;
+}
+
+.section-nosotros {
+    overflow: hidden;
+}
+
+.parrafo-nosotros {
+    float: left;
+    width: 65%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.img-equipo {
+    float: right; 
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.div-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto p {
+    grid-column: span 3;
+    text-align: center;
+  }
+
+input,
+textarea {
+    width: calc(100% - 20px); /* Ajuste para compensar el espacio del padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+textarea {
+    grid-column: span 3; /* Ocupar las 3 columnas */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.btn-enviar {
+    grid-column: span 3; /* Ocupar las 3 columnas */
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-enviar:hover {
+    background-color: #45a049;
+}
+
+.section-final-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+    max-width: 800px; /* Ajusta según sea necesario */
+    margin: auto; /* Centra el contenido */
+    margin-top: 50px;
+}
+
+iframe {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Media Query para dispositivos móviles */
+
+@media only screen and (max-width: 768px) {
+    /* Ajustes para dispositivos móviles */
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-empresa {
+        max-width: 30%;
+        order: 0;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        order: 1;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .redes {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-1 {
+        flex-direction: column;
+    }
+
+    .parrafo-seccion,
+    .img-dispositivos {
+        width: 100%;
+    }
+
+    .btn-demo-class {
+        flex: none;
+    }
+
+}
