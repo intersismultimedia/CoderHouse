@@ -2,8 +2,8 @@
 *{
     font-family: 'Nunito Sans', sans-serif;
     list-style: none;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 
 header {
     display: flex;
@@ -208,7 +209,7 @@ footer {
 
 input,
 textarea {
-    width: calc(100% - 20px); /* Ajuste para compensar el espacio del padding */
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -218,7 +219,7 @@ textarea {
 }
 
 textarea {
-    grid-column: span 3; /* Ocupar las 3 columnas */
+    grid-column: span 3;
 }
 
 input[type="checkbox"] {
@@ -230,7 +231,7 @@ label {
 }
 
 .btn-enviar {
-    grid-column: span 3; /* Ocupar las 3 columnas */
+    grid-column: span 3;
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -246,10 +247,10 @@ label {
 
 .section-final-contacto {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
-    gap: 20px; /* Espacio entre las columnas */
-    max-width: 800px; /* Ajusta según sea necesario */
-    margin: auto; /* Centra el contenido */
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
     margin-top: 50px;
 }
 
@@ -261,7 +262,6 @@ iframe {
 /* Media Query para dispositivos móviles */
 
 @media only screen and (max-width: 768px) {
-    /* Ajustes para dispositivos móviles */
 
     header {
         flex-direction: column;
