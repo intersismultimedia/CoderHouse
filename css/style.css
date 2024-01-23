@@ -319,4 +319,32 @@ iframe {
         text-align: center;
     }
 
+    .formulario-contacto {
+        grid-template-columns: 1fr;
+        max-width: none;
+    }
+
+    .formulario-contacto p {
+        grid-column: span 1;
+        text-align: center;
+      }
+
+    input,
+    textarea {
+        width: calc(100% - 20px);
+    }
+
+    .section-final-contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: none;
+        margin: auto;
+        margin-top: 50px;
+    }
+    
+    iframe {
+        flex: 1;
+        margin-left: 20px;
+    }
+
 }
