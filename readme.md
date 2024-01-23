@@ -2,8 +2,8 @@
 
 <h2 align="center" >HTML, CSS, GIT, GITHUB</h2>
 
-<h3 align="center" >Alumno: Alexis Rivera</h3>
+<h3 align="left" >Alumno: Alexis Rivera</h3>
 
-<h3 align="center" >Comisión: 56590</h3>
+<h3 align="left" >Comisión: 56590</h3>
 
-<h3 align="center" >Segundo entregable.</h3>
+<h3 align="left" >Segundo entregable.</h3>
