@@ -127,7 +127,7 @@ footer {
 }
 
 .imagenes-promo {
-    width: 25rem;
+    width: 80%;
 }
 
 .btn-you-tube{
@@ -303,7 +303,7 @@ iframe {
 
     .parrafo-seccion,
     .img-dispositivos {
-        width: 100%;
+        width: 90%;
     }
 
     .btn-demo-class {
@@ -347,4 +347,15 @@ iframe {
         margin-left: 20px;
     }
 
+    .parrafo-nosotros,
+    .img-equipo {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .youtube-video {
+        width: 85%;
+        height: auto;
+    }
 }
