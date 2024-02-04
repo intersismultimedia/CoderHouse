@@ -303,11 +303,12 @@ footer {
   }
   .section-nosotros .parrafo-nosotros {
     float: none;
-    width: 90%;
+    width: 95%;
     box-sizing: border-box;
-    padding-right: 0;
-    text-align: center;
+    margin: 0 auto;
+    text-align: justify;
     display: block;
+    padding-bottom: 20px;
   }
   .section-nosotros .img-equipo {
     float: none;

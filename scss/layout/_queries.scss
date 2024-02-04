@@ -66,13 +66,13 @@
     .section-final-contacto {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: none;
+        @include anchoMax(none);
         margin: auto;
         margin-top: 50px;
         iframe {
             flex: 1;
             margin-left: 20px;
-            max-width: 90%;
+            @include anchoMax(90%);
         }
     }
     
@@ -80,11 +80,12 @@
         overflow: hidden;
         .parrafo-nosotros {
             float: none;
-            width: 90%;
+            width: 95%;
             box-sizing: border-box;
-            padding-right: 0;
-            text-align: center;
+            margin: 0 auto;
+            text-align: justify;
             display: block;
+            padding-bottom: 20px;
         }
         .img-equipo {
             float: none;
