@@ -1,0 +1,25 @@
+@import "./base/variables";
+@import "./utilities/extends";
+@import "./utilities/mixins";
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/menu";
+@import "./layout/redes";
+@import "./layout/footer";
+@import "./layout/productos";
+@import "./layout/ventas";
+@import "./layout/nosotros";
+@import "./layout/contacto";
+@import "./layout/queries";
+
+
+
+*{
+    font-family: $fuentePpal;
+    list-style-type: none;
+    text-decoration: none;
+    color: $colorN;
+    
+}
+

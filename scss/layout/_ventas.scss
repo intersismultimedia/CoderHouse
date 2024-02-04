@@ -1,0 +1,14 @@
+.main-ventas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+
+    .section-ventas {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+}

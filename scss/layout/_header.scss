@@ -1,0 +1,12 @@
+header{
+    display: $dFlex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
+    .logo-empresa{
+        order: -1;
+        @include anchoMax(15%);
+    }
+}

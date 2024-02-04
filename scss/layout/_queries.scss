@@ -1,0 +1,103 @@
+@media only screen and (max-width: 768px) {
+
+    body{
+        padding: 0px;
+        margin: 0px;
+        header {
+            flex-direction:row;
+            text-align: center;
+            padding: 0px;
+            .logo-empresa {
+                @include anchoMax(30%);
+                order: 0;
+                margin-left: 0px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            .redes {
+                position: fixed;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        
+        }
+    };
+   
+    .section-1 {
+        flex-direction: column;
+        .parrafo-seccion,
+        .img-dispositivos {
+            width: 80%;
+        }
+        .btn-demo-class {
+            flex: none;
+            margin-bottom: 15px;
+        }
+    }
+
+    .main-ventas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .formulario-contacto {
+        padding: 0px;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        p {
+            grid-column: span 1;
+            text-align: center;
+          }
+        
+        input,
+        textarea {
+            width: calc(100% - 20px);
+        }
+    }
+
+    .section-final-contacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: none;
+        margin: auto;
+        margin-top: 50px;
+        iframe {
+            flex: 1;
+            margin-left: 20px;
+            max-width: 90%;
+        }
+    }
+    
+    .section-nosotros{
+        overflow: hidden;
+        .parrafo-nosotros {
+            float: none;
+            width: 90%;
+            box-sizing: border-box;
+            padding-right: 0;
+            text-align: center;
+            display: block;
+        }
+        .img-equipo {
+            float: none;
+            width: 90%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    .youtube-video {
+        width: 85%;
+        height: auto;
+    }
+}

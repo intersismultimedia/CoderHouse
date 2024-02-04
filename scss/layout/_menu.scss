@@ -1,0 +1,22 @@
+.nav{
+    display: $dFlex;
+    justify-content: center;
+
+    .menu{
+        list-style: none;
+        display: $dFlex;
+        margin: 0;
+        padding: 0;
+
+        
+    }
+}
+.li-pp{
+    margin: 0 10px;
+    list-style: none;
+    display: $dFlex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}

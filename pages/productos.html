@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entregable CSS - Productos</title>
+    <title>Tango Gestión - Productos</title>
     <!---embebe fuente de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!---embebe archivo de estilos-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -21,16 +20,34 @@
         <!---logo de la empresa-->
         <img class="logo-empresa" src="../imag/logo.png" alt="logo tango gestión">
         <!---menú de navegación-->
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="../pages/ventas.html">Ventas</a></li>
-                <li><a href="../pages/capacitacion.html">Capacitación</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contactanos.html">Contáctanos</a></li>
-                <li><a href="../pages/bootstrap.html">Bootstrap</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg .bg-body">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Ventas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./capacitacion.html">Capacitación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactanos.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <!---redes sociales-->
         <ul class="redes">
@@ -59,7 +76,7 @@
         </div>
         <!---seccion2-->
         <section>
-            <h3>Tango Live</h3>
+            <h2>Tango Live</h2>
             <p class="parrafo-seccion1-productos">Suscribite a las consultas que más te interesen para que te lleguen por correo
                 según la frecuencia que definas.</p>
             <img class="imagenes-promo" src="../imag/tango-live.png" alt="imagen ilustrativa grafico de torta en 3d">
@@ -71,7 +88,7 @@
         </div>
         <!---seccion3-->
         <section>
-            <h3>Tango Empleados</h3>
+            <h2>Tango Empleados</h2>
             <p class="parrafo-seccion1-productos">Gestioná con total control las licencias y vacaciones de todo tu personal.</p>
             <img class="imagenes-promo" src="../imag/tango-empleadoss.png"
                 alt="imagen ilustrativa pantallas del módulo de control de empleados">
@@ -83,7 +100,7 @@
         </div>
         <!---seccion4-->
         <section>
-            <h3>Tango Colectora</h3>
+            <h2>Tango Colectora</h2>
             <p class="parrafo-seccion1-productos">Realizá desde un dispositivo Android, la toma de inventario, los ingresos y
                 egresos de stock.</p>
             <img class="imagenes-promo" src="../imag/tango-colectora.png"
@@ -96,14 +113,14 @@
         </div>
         <!---seccion5-->
         <section>
-            <h3>Seguimiento y Control</h3>
+            <h2>Seguimiento y Control</h2>
             <p class="parrafo-seccion1-productos">Recibí notificaciones en tu correo de las tareas que se estén ejecutando en
                 segundo plano.</p>
             <img class="imagenes-promo" src="../imag/tango-seguimiento.png" alt="imagen ilustrativa de conexiones y notificaciones">
         </section>
         <!---seccion6-->
         <section>
-            <h3>Apertura con API</h3>
+            <h2>Apertura con API</h2>
             <p class="parrafo-seccion1-productos">Potenciá el alcance de tu sistema Tango conectándolo con diferentes fuentes de
                 información a través de sus APIs.</p>
             <img class="imagenes-promo" src="../imag/tango-api.png" alt="imagen ilustrativa de engranajes en 3d">
@@ -115,7 +132,7 @@
         </div>
     </main>
     <!---pie de pagina (footer)-->
-    <footer>Designed by Alexis Rivera for Carrera Desarrollo Web Flex © 2024</footer>
+    <footer>© 2024 Designed by Alexis Rivera - Tango Gestión</footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

@@ -1,0 +1,25 @@
+.section-nosotros {
+    overflow: hidden;
+
+    .parrafo-nosotros {
+        float: left;
+        width: 65%;
+        box-sizing: border-box;
+        padding-right: 20px;
+        text-align: justify;
+    }
+
+    .img-equipo {
+        float: right; 
+        width: 35%;
+        box-sizing: border-box;
+    }
+
+    .div-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}

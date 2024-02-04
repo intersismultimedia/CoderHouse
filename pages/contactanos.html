@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entregable CSS - Contáctanos</title>
+    <title>Tango Gestión - Contáctanos</title>
     <!---embebe fuente de google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600&display=swap"
         rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!---embebe archivo de estilos-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -21,16 +22,34 @@
         <!---logo de la empresa-->
         <img class="logo-empresa" src="../imag/logo.png" alt="logo tango gestión">
         <!---menú de navegación-->
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/ventas.html">Ventas</a></li>
-                <li><a href="../pages/capacitacion.html">Capacitación</a></li>
-                <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li><a href="#">Contáctanos</a></li>
-                <li><a href="../pages/bootstrap.html">Bootstrap</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg .bg-body">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ventas.html">Ventas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./capacitacion.html">Capacitación</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
         <!---redes sociales-->
         <ul class="redes">
@@ -47,36 +66,65 @@
         <h1>Soporte</h1>
         <!---seccion1-->
         <section>
-            <h3>Contacto comercial</h3>
-            <p>Envia tu solicitud de contacto comercial y nos comunicaremos a la brebevedad.</p>
-            <p>Para consultas tecnicas u operativas: <a href="https://zonasoporte.axoft.com/pais/ar"></a>Ir a Zona
+            <h2 class="titulo-contacto">Contacto comercial</h2>
+            <p class="parrafo-soporte">Envia tu solicitud de contacto comercial y nos comunicaremos a la brebevedad.</p>
+            <p class="parrafo-soporte">Para consultas tecnicas u operativas: <a href="https://zonasoporte.axoft.com/pais/ar"></a>Ir a Zona
                 Soporte</p>
             <form class="formulario-contacto" action="submit">
-                <input type="text" name="nombre" id="nombre" placeholder="*Nombre">
-                <input type="text" name="apellido" id="apellido" placeholder="*Apellido">
-                <input type="email" name="email" id="email" placeholder="*Email">
-                <input type="number" name="telefono" id="telefono" placeholder="*Telefono">
-                <input type="text" name="localidad" id="localidad" placeholder="*Localidad">
-                <input type="text" name="nombre-empresa" id="nombre-empresa" placeholder="*Nombre de la empresa">
-                <input type="textarea" rows="4" name="comentario" id="comentario" placeholder="*Comentarios">
+                <div class="mb-3">
+                    <label for="nombre-form" class="form-label">*Nombre</label>
+                    <input type="text" class="form-control" id="nombre-form" placeholder="Juan">
+                </div>
+                <div class="mb-3">
+                    <label for="apellido-form" class="form-label">*Apellido</label>
+                    <input type="text" class="form-control" id="apellido-form" placeholder="Ferrer">
+                </div>
+                <div class="mb-3">
+                    <label for="correo-form" class="form-label">*Email</label>
+                    <input type="email" class="form-control" id="correo-form" placeholder="email@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                    <label for="telefono-form" class="form-label">*Teléfono</label>
+                    <input type="number" class="form-control" id="telefono-form" placeholder="116857496">
+                </div>
+                <div class="mb-3">
+                    <label for="localidad-form" class="form-label">*Localidad</label>
+                    <input type="text" class="form-control" id="localidad-form" placeholder="San Vicente">
+                </div>
+                <div class="mb-3">
+                    <label for="nEmpresa-form" class="form-label">*Nombre Empresa</label>
+                    <input type="text" class="form-control" id="nEmpresa-form" placeholder="Empresa nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="comentarios-form" class="form-label textareaLargo">Comentarios</label>
+                    <textarea rows="4" class="form-control" id="comentarios-form" placeholder=""></textarea>
+                </div>
                 <p>*Especificar motivo de la consulta</p>
-                <input type="checkbox" id="gestion" value="gestion"><label for="">Gestión</label>
-                <input type="checkbox" id="gestion" value="estudios-contables"><label for="">Estudios Contables</label>
-                <input type="checkbox" id="gestion" value="punto-venta"><label for="">Punto de Venta</label>
-                <input type="checkbox" id="gestion" value="resto"><label for="">Resto</label>
-                <input type="checkbox" id="gestion" value="capacitaciones"><label for="">Capacitaciones</label>
+                <label class="btn btn-primary" for="check-gestion">Gestión</label>
+                <input type="checkbox" class="btn-check" id="check-gestion" autocomplete="off">
+                <label class="btn btn-primary" for="check-contables">Estudios Contables</label>
+                <input type="checkbox" class="btn-check" id="check-contables" autocomplete="off">
+                <label class="btn btn-primary" for="check-pos">Punto de Venta</label>
+                <input type="checkbox" class="btn-check" id="check-pos" autocomplete="off">
+                <label class="btn btn-primary" for="check-resto">Restó</label>
+                <input type="checkbox" class="btn-check" id="check-resto" autocomplete="off">
+                <label class="btn btn-primary" for="check-capacitaciones">Capcitaciones</label>
+                <input type="checkbox" class="btn-check" id="check-capacitaciones" autocomplete="off">
+                <label class="btn btn-primary" for="check-distribuidores">Distribuciones</label>
+                <input type="checkbox" class="btn-check" id="check-distribuidores" autocomplete="off">
+
                 <p><button type="submit" class="btn-enviar">ENVIAR</button></p>
                 <p>* Campos obligatorios</p>
             </form>
         </section>
         <!---seccion2-->
         <section class="section-final-contacto">
-            <div >
-                <h3>Axoft Argentina SA</h3>
-                <h4>CENTRO DE ATENCIÓN AL CLIENTE</h4>
+            <div>
+                <h2>Axoft Argentina SA</h2>
+                <h3>CENTRO DE ATENCIÓN AL CLIENTE</h3>
                 <p>Lunes a Viernes de 9:30 a 18:30 hs.</br>
                     Cerrito 1186 - PB, Recoleta, C.A.B.A.</p>
-                <h4>ADMINISTRACIÓN CENTRAL</h4>
+                <h3>ADMINISTRACIÓN CENTRAL</h3>
                 <p>Lunes a Viernes de 9:30 a 18:30 hs.</br>
                     Cerrito 1186 - 2º, Recoleta, C.A.B.A.</p>
                 <p>(+54 11) 5031-8264</p>
@@ -89,7 +137,7 @@
         </section>
     </main>
     <!---pie de pagina (footer)-->
-    <footer>Designed by Alexis Rivera for Carrera Desarrollo Web Flex © 2024</footer>
+    <footer>© 2024 Designed by Alexis Rivera - Tango Gestión</footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
