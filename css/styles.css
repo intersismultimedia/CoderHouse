@@ -5,6 +5,7 @@ body {
 }
 
 header {
+  background-color: #212529;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +14,7 @@ header {
 }
 header .logo-empresa {
   order: -1;
-  max-width: 15%;
+  max-height: 10vh;
 }
 
 main {
